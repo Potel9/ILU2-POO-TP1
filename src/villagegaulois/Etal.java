@@ -41,10 +41,10 @@ public class Etal {
 
 	public String afficherEtal() {
 		if (etalOccupe) {
-			return "L'étal de " + vendeur.getNom() + " est garni de " + quantite
+			return "L'Etal de " + vendeur.getNom() + " est garni de " + quantite
 					+ " " + produit + "\n";
 		}
-		return "L'étal est libre";
+		return "L'Etal est libre";
 	}
 
 	public String acheterProduit(int quantiteAcheter, Gaulois acheteur) {
@@ -75,7 +75,7 @@ public class Etal {
 	}
 
 	public boolean contientProduit(String produit) {
-		return this.produit.equals(produit);
+	    return produit != null && produit.equals(this.produit);
 	}
 
 }
