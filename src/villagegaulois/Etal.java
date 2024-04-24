@@ -98,7 +98,7 @@ public class Etal {
 	    return chaine.toString();
 	}
 	
-	public Gaulois partirVendeur()
+
 
 	public boolean contientProduit(String produit) {
 	    return produit != null && produit.equals(this.produit);
